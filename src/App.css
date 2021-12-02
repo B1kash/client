@@ -36,3 +36,287 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/* ----------------Home--------------- */
+.container{
+  position: relative;
+  text-align: center;
+  
+}
+.Headerpic{
+  width: 100%;
+      height: 80vh;
+}
+.centertext{
+  color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+
+      /* --------------Navbar-------------------- */
+
+      /* .navbar-brand{
+        height: 20px;
+        width: 50;
+      } */
+
+      .logo{
+        height: 50px;
+        width: 150px;
+      }
+
+
+
+      /* ---------------home---------------- */
+      .carousel-item{
+        height: 90vh;
+      }
+      
+
+      /*------ About Us ------- */
+.abt {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cont{
+padding-left: 200px;
+padding-right: 200px;
+font-size: larger;
+}
+
+
+.Aboutpic{
+padding-left: 500px;
+}
+
+
+/* ------------Discover--------------- */
+.dishead{
+  text-align: center;
+}
+
+
+.container .col{
+  width: 300px;
+  height: 450px;
+  margin: 30px 30px 30px 30px;
+  box-shadow: 2px 2px 7px 1px #4b5155;
+  padding-top: 15px;
+}
+
+.container .col:hover{
+
+  box-shadow: 2px 2px 7px 1px #b4cf1a;
+
+}
+
+.container .col .img{
+  width: fit-content;
+}
+
+.container .col button{
+
+  padding: 5px 5px 5px 5px;
+  background-color: rgb(40, 133, 82);
+  color: whitesmoke;
+  border-radius: 5px;
+}
+
+.container .col button:hover{
+  background-color: rgb(196, 88, 16);
+  color: bisque;
+}
+
+
+/* Login */
+.sign-in{
+  background: linear-gradient(90deg, #d1bf56, #e3f11f);
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 90vh;
+
+}
+
+
+.signin-content{
+  background: linear-gradient(90deg, #e2e077, #ffee00f3);		
+	position: relative;	
+	height: 600px;
+	width: 360px;	
+	box-shadow: 0px 0px 24px #5C5696;
+  margin:auto auto;
+  margin-top: -4rem;
+}
+
+.signin-form{
+
+padding-top: 10rem;
+
+}
+
+.form-group{
+  padding-top: 2rem;
+}
+
+.form-submit{
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+.form-submit:hover{
+  background: gold;
+  color: black;
+  border-radius: 8px;
+}
+
+
+/*--------- Sign up ---- */
+
+.signup{
+  background: linear-gradient(90deg, #879aeb, #6fdee6);
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 90vh;
+
+}
+
+
+.signup-content{
+  background: linear-gradient(90deg, #3b9dbb, #3e74a0f3);		
+	position: relative;	
+	height: 600px;
+	width: 360px;	
+	box-shadow: 0px 0px 24px #5C5696;
+  margin:auto auto;
+  margin-top: -4rem;
+}
+
+.signup-form{
+
+padding-top: 5rem;
+
+}
+
+.form-group{
+  padding-top: 2rem;
+
+}
+
+.form-submit{
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+.form-submit:hover{
+  background: gold;
+  color: black;
+  border-radius: 8px;
+}
+
+/* 404 error page */
+
+#notfound{
+  position: relative;
+  height: 100vh;
+}
+
+#notfound .notfound{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.notfound{
+  max-width: 920px;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.notfound .notfound-404{
+  position: absolute;
+  height: 100px;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.notfound .notfound-404 h1 {
+  font-family:'Times New Roman', Times, serif;
+  color: lightblue;
+  font-weight: 900;
+  font-size: 276px;
+  margin: 0px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.notfound h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 46px;
+  color: #282c34;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.notfound p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  color: #282c34;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.notfound a {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #189cf0;
+  display: inline-block;
+  padding: 16px 38px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  color: aliceblue;
+  font-weight: 400;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.notfound a:hover {
+  background-color: #fff;
+  border-color: #189cf0;
+  color: #189cf0;
+}
+
+@media only screen and (max-width: 480px){
+  .notfound .notfound-404 h1 {
+    font-size: 162px;
+  }
+  .notfound h2 {
+    font-size: 26px;
+  }
+}
