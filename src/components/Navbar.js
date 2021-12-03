@@ -1,9 +1,53 @@
-import React from 'react'
+import React, {useContext} from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { NavLink } from "react-router-dom";
 import logo from "../Images/logo.png";
+import { UserContext } from '../App';
 
 const Navbar = () => {
+  const {state, dispatch} = useContext(UserContext);
+  const RanderMenu = () =>{
+    if(state){
+      return(
+        <>
+        <li className="nav-item">
+          <NavLink className="nav-link " aria-current="page" to="/">Home</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" to="/about">About</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" to="/discover">Discover</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" to="/logout">Logout</NavLink>
+        </li>
+
+        
+        </>
+      )
+    }else{
+      return(
+        <>
+        <li className="nav-item">
+          <NavLink className="nav-link " aria-current="page" to="/">Home</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" to="/about">About</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" to="/discover">Discover</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" to="/signup">Signup</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" to="/login">Login</NavLink>
+        </li>
+        </>
+      )
+    }
+  }
     return (
         <>
         
@@ -26,19 +70,19 @@ const Navbar = () => {
         <li className="nav-item">
           <NavLink className="nav-link" to="/discover">Discover</NavLink>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <NavLink className="nav-link" to="/places">Places</NavLink>
-        </li>
+        </li> */}
         
         
       </ul>
       <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-      <li className="nav-item">
+      {/* <li className="nav-item">
           <NavLink className="nav-link" to="/aboutme">About me</NavLink>
         </li>
       <li className="nav-item">
           <NavLink className="nav-link" to="/contact">contact</NavLink>
-        </li>
+        </li> */}
       <li className="nav-item">
           <NavLink className="nav-link" to="/signup">Signup</NavLink>
         </li>
